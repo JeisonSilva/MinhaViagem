@@ -9,7 +9,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77b8d9a9-10e4-459c-9d32-d27747124051" name="Default Changelist" comment="" />
+    <list default="true" id="fdfc48c8-01e2-4229-bf2b-80b2dc82c7d0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1sjhA3djA0Kj6Lsc0E0RsT6UQcM" />
+  <component name="ProjectId" id="1sjn7howVKFl4or118utEtznR1v" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -33,7 +35,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.314052850">
+      <recent name="com.example.minhaviagem" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -44,7 +52,7 @@
       </method>
     </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="Minha_Viagem.app" />
+      <module name="Minha_viagem.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -105,30 +113,22 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="77b8d9a9-10e4-459c-9d32-d27747124051" name="Default Changelist" comment="" />
-      <created>1621391760998</created>
+      <changelist id="fdfc48c8-01e2-4229-bf2b-80b2dc82c7d0" name="Default Changelist" comment="" />
+      <created>1621394701221</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1621391760998</updated>
+      <updated>1621394701221</updated>
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1634" height="279" key="GridCell.Tab.0.bottom" timestamp="1621391914432">
+    <state x="353" y="438" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1621394907617">
       <screen x="0" y="143" width="1680" height="907" />
     </state>
-    <state width="1634" height="279" key="GridCell.Tab.0.bottom/0.143.1680.907/1680.116.1366.768@0.143.1680.907" timestamp="1621391914432" />
-    <state width="1634" height="279" key="GridCell.Tab.0.center" timestamp="1621391914431">
+    <state x="353" y="438" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.143.1680.907/1680.116.1366.768@0.143.1680.907" timestamp="1621394907617" />
+    <state x="637" y="305" width="396" height="433" key="chooseDestDirectoryDialog" timestamp="1621394866215">
       <screen x="0" y="143" width="1680" height="907" />
     </state>
-    <state width="1634" height="279" key="GridCell.Tab.0.center/0.143.1680.907/1680.116.1366.768@0.143.1680.907" timestamp="1621391914431" />
-    <state width="1634" height="279" key="GridCell.Tab.0.left" timestamp="1621391914431">
-      <screen x="0" y="143" width="1680" height="907" />
-    </state>
-    <state width="1634" height="279" key="GridCell.Tab.0.left/0.143.1680.907/1680.116.1366.768@0.143.1680.907" timestamp="1621391914431" />
-    <state width="1634" height="279" key="GridCell.Tab.0.right" timestamp="1621391914431">
-      <screen x="0" y="143" width="1680" height="907" />
-    </state>
-    <state width="1634" height="279" key="GridCell.Tab.0.right/0.143.1680.907/1680.116.1366.768@0.143.1680.907" timestamp="1621391914431" />
+    <state x="637" y="305" width="396" height="433" key="chooseDestDirectoryDialog/0.143.1680.907/1680.116.1366.768@0.143.1680.907" timestamp="1621394866215" />
   </component>
 </project>
