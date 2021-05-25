@@ -13,12 +13,7 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "0.1.0"
-        if (rootProject.file("local.properties").exists()) {
-            localProperties.load(rootProject.file("local.properties").newDataInputStream())
-            manifestPlaceholders = [ apiKey : localProperties['APIKEY']]
-        }else{
-            manifestPlaceholders = [ apiKey : "\"${APIKEY}\""]
-        }
+        imanifestPlaceholders = [ apiKey : "\"${APIKEY}\""]
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -26,23 +21,13 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            if (rootProject.file("local.properties").exists()) {
-                buildConfigField "String", "APPCANTER_API_KEY", localProperties['appcenterKey']
-                buildConfigField "String", "MAP_API_KEY", localProperties['mapApiKey']
-            }else{
-                buildConfigField "String", "APPCANTER_API_KEY", "\"${appcenterKey}\""
-                buildConfigField "String", "MAP_API_KEY", "\"${mapApiKey}\""
-            }
+            buildConfigField "String", "APPCANTER_API_KEY", "\"${appcenterKey}\""
+            buildConfigField "String", "MAP_API_KEY", "\"${mapApiKey}\""
 
         }
         debug {
-            if (rootProject.file("local.properties").exists()) {
-                buildConfigField "String", "APPCANTER_API_KEY", localProperties['appcenterKey']
-                buildConfigField "String", "MAP_API_KEY", localProperties['mapApiKey']
-            }else{
-                buildConfigField "String", "APPCANTER_API_KEY", "\"${appcenterKey}\""
-                buildConfigField "String", "MAP_API_KEY", "\"${mapApiKey}\""
-            }
+            buildConfigField "String", "APPCANTER_API_KEY", "\"${appcenterKey}\""
+            buildConfigField "String", "MAP_API_KEY", "\"${mapApiKey}\""
         }
     }
     compileOptions {
