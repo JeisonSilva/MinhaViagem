@@ -13,7 +13,7 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "0.1.0"
-        imanifestPlaceholders = [ apiKey : "\"${APIKEY}\""]
+        imanifestPlaceholders = [ apiKey : "\"${System.env.APIKEY}\""]
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -21,13 +21,13 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField "String", "APPCANTER_API_KEY", "\"${appcenterKey}\""
-            buildConfigField "String", "MAP_API_KEY", "\"${mapApiKey}\""
+            buildConfigField "String", "APPCANTER_API_KEY", "\"${System.env.appcenterKey}\""
+            buildConfigField "String", "MAP_API_KEY", "\"${System.env.mapApiKey}\""
 
         }
         debug {
-            buildConfigField "String", "APPCANTER_API_KEY", "\"${appcenterKey}\""
-            buildConfigField "String", "MAP_API_KEY", "\"${mapApiKey}\""
+            buildConfigField "String", "APPCANTER_API_KEY", "\"${System.env.appcenterKey}\""
+            buildConfigField "String", "MAP_API_KEY", "\"${System.env.mapApiKey}\""
         }
     }
     compileOptions {
