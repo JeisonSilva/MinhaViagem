@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/nav_percurso" android:icon="@drawable/ic_baseline_place_24" app:showAsAction="ifRoom" android:title="Minha viagem"/>
+    <item android:id="@+id/nav_notificacao" android:icon="@drawable/ic_baseline_contact_mail_24" app:showAsAction="ifRoom" android:title="Notificações de chegada"/>
+    <item android:id="@+id/nav_precisao" android:icon="@drawable/ic_baseline_cloud_24" app:showAsAction="ifRoom" android:title="Previsão do tempo"/>
+</menu>
