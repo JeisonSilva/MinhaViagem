@@ -16,6 +16,7 @@ public class CoordenadaAtual extends LocationCallback {
 
     private final CoordenadaCallback coordenadaCallback;
     private FusedLocationProviderClient locationClient;
+    private LatLng latLngAtual;
 
     public CoordenadaAtual(CoordenadaCallback coordenadaCallback) {
         this.coordenadaCallback = coordenadaCallback;
@@ -35,7 +36,7 @@ public class CoordenadaAtual extends LocationCallback {
     public void onLocationResult(@NonNull LocationResult locationResult) {
         super.onLocationResult(locationResult);
 
-        LatLng latLng = new LatLng(locationResult.getLastLocation().getLatitude(), locationResult.getLastLocation().getLongitude());
-        this.coordenadaCallback.PosicionarDispositivo(latLng);
+        this.latLngAtual = new LatLng(locationResult.getLastLocation().getLatitude(), locationResult.getLastLocation().getLongitude());
+        this.coordenadaCallback.PosicionarDispositivo(latLngAtual);
     }
 }

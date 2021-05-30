@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.minhaviagem.minhalocalizacao.MinhaLocalizacaoFragment;
+import com.google.android.libraries.places.api.Places;
 import com.google.android.material.navigation.NavigationView;
 import com.microsoft.appcenter.AppCenter;
 import com.microsoft.appcenter.analytics.Analytics;
@@ -38,6 +39,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         AppCenter.start(getApplication(), BuildConfig.APPCANTER_API_KEY,
                 Analytics.class, Crashes.class);
+
+        if(!Places.isInitialized())
+            Places.initialize(getBaseContext(), BuildConfig.MAP_API_KEY);
 
     }
 
