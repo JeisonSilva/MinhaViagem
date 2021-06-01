@@ -15,15 +15,14 @@
   <component name="ChangeListManager">
     <list default="true" id="fdfc48c8-01e2-4229-bf2b-80b2dc82c7d0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem/minhalocalizacao/MinhaLocalizacaoFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem/minhalocalizacao/MinhaLocalizacaoFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem/notificacao/ContatosNotificacaoFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem/notificacao/ContatosNotificacaoFragment.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@83451620]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@/home/jeison/.android/avd/Nexus_5_API_22.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
