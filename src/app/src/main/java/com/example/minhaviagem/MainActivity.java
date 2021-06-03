@@ -7,10 +7,16 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.Manifest;
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.minhaviagem.minhalocalizacao.MinhaLocalizacaoFragment;
+import com.example.minhaviagem.minhalocalizacao.services.CoordenadaAtual;
+import com.example.minhaviagem.minhalocalizacao.services.CoordenadaDestino;
+import com.example.minhaviagem.minhalocalizacao.services.GeofenceHelper;
+import com.example.minhaviagem.notificacao.ContatosNotificacaoFragment;
+import com.google.android.gms.location.LocationServices;
 import com.google.android.libraries.places.api.Places;
 import com.google.android.material.navigation.NavigationView;
 import com.microsoft.appcenter.AppCenter;
@@ -43,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if(!Places.isInitialized())
             Places.initialize(getBaseContext(), BuildConfig.MAP_API_KEY);
 
+
     }
 
     @Override
@@ -58,7 +65,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_percurso:
                 getSupportFragmentManager()
                         .beginTransaction()
-                        .add(R.id.container, MinhaLocalizacaoFragment.newInstance())
+                        .replace(R.id.container, MinhaLocalizacaoFragment.newInstance())
+                        .commit();
+                break;
+            case R.id.nav_notificacao:
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.container, ContatosNotificacaoFragment.newInstance())
                         .commit();
                 break;
         }
