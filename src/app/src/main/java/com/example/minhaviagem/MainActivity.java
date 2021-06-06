@@ -8,6 +8,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.Manifest;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -16,6 +17,7 @@ import com.example.minhaviagem.minhalocalizacao.services.CoordenadaAtual;
 import com.example.minhaviagem.minhalocalizacao.services.CoordenadaDestino;
 import com.example.minhaviagem.minhalocalizacao.services.GeofenceHelper;
 import com.example.minhaviagem.notificacao.ContatosNotificacaoFragment;
+import com.example.minhaviagem.previsaotempo.PrecisaoTempoFragment;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.libraries.places.api.Places;
 import com.google.android.material.navigation.NavigationView;
@@ -50,6 +52,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Places.initialize(getBaseContext(), BuildConfig.MAP_API_KEY);
 
 
+
+
     }
 
     @Override
@@ -74,6 +78,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         .replace(R.id.container, ContatosNotificacaoFragment.newInstance())
                         .commit();
                 break;
+            case R.id.nav_precisao:
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.container, PrecisaoTempoFragment.newInstance((SensorManager) getSystemService(SENSOR_SERVICE)))
+                        .commit();
         }
 
         if(drawerLayout.isDrawerOpen(GravityCompat.START))

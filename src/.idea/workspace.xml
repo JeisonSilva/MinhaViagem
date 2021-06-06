@@ -15,13 +15,9 @@
   <component name="ChangeListManager">
     <list default="true" id="fdfc48c8-01e2-4229-bf2b-80b2dc82c7d0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem/notificacao/ContatosNotificacaoFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem/notificacao/ContatosNotificacaoFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem/notificacao/adapters/ContatoAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem/notificacao/adapters/ContatoAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem/notificacao/adapters/ContatoViewHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem/notificacao/adapters/ContatoViewHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/contato_card.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/contato_card.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_contatos_notificacao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_contatos_notificacao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem/previsaotempo/PrecisaoTempoFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem/previsaotempo/PrecisaoTempoFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_precisao_tempo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_precisao_tempo.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,8 +62,8 @@
     <property name="ExportApk.SignV2" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../boa-viagem/src" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi" />
     <property name="project.structure.last.edited" value="Dependencies" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -76,6 +72,13 @@
   <component name="RecentsManager">
     <key name="android.template.314052850">
       <recent name="com.example.minhaviagem" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi" />
     </key>
   </component>
   <component name="RunManager">
@@ -157,6 +160,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="572" y="271" width="598" height="500" key="#Console" timestamp="1622950113352">
+      <screen x="72" y="143" width="1608" height="907" />
+    </state>
+    <state x="572" y="271" width="598" height="500" key="#Console/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622950113352" />
     <state x="505" y="206" width="732" height="630" key="#Inspections" timestamp="1622597672708">
       <screen x="72" y="143" width="1608" height="907" />
     </state>
@@ -170,16 +177,24 @@
     </state>
     <state x="329" y="500" width="966" height="550" key="#PSD/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622775817165" />
     <state x="269" y="413" key="#PSD/1680.141.1366.768/0.0.1680.1050@0.0.1680.1050" timestamp="1622326668907" />
-    <state x="684" y="232" width="374" height="578" key="#com.intellij.ide.util.MemberChooser" timestamp="1622777011399">
+    <state x="596" y="327" width="549" height="389" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1622953723216">
       <screen x="72" y="143" width="1608" height="907" />
     </state>
-    <state x="684" y="232" width="374" height="578" key="#com.intellij.ide.util.MemberChooser/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622777011399" />
+    <state x="596" y="327" width="549" height="389" key="#com.intellij.fileTypes.FileTypeChooser/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622953723216" />
+    <state x="684" y="232" width="374" height="578" key="#com.intellij.ide.util.MemberChooser" timestamp="1622949469976">
+      <screen x="72" y="143" width="1608" height="907" />
+    </state>
+    <state x="684" y="232" width="374" height="578" key="#com.intellij.ide.util.MemberChooser/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622949469976" />
     <state x="639" y="103" key="#com.intellij.ide.util.MemberChooser/1680.141.1366.768/0.0.1680.1050@0.0.1680.1050" timestamp="1622430289431" />
     <state x="410" y="438" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1621910318804">
       <screen x="72" y="143" width="1608" height="907" />
     </state>
     <state x="353" y="438" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.143.1680.907/1680.116.1366.768@0.143.1680.907" timestamp="1621394907617" />
     <state x="410" y="438" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1621910318804" />
+    <state x="609" y="274" width="524" height="495" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1622953747164">
+      <screen x="72" y="143" width="1608" height="907" />
+    </state>
+    <state x="609" y="274" width="524" height="495" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622953747164" />
     <state x="228" y="63" width="1408" height="850" key="AVDManager" timestamp="1621822424511">
       <screen x="72" y="143" width="1608" height="907" />
     </state>
@@ -198,49 +213,49 @@
       <screen x="72" y="143" width="1608" height="907" />
     </state>
     <state width="439" height="506" key="DebuggerActiveHint/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622694578298" />
-    <state x="659" y="283" width="424" height="477" key="FileChooserDialogImpl" timestamp="1621806425135">
+    <state x="659" y="283" width="424" height="477" key="FileChooserDialogImpl" timestamp="1622947127949">
       <screen x="72" y="143" width="1608" height="907" />
     </state>
-    <state x="659" y="283" width="424" height="477" key="FileChooserDialogImpl/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1621806425135" />
-    <state width="1562" height="278" key="GridCell.Tab.0.bottom" timestamp="1622777359946">
+    <state x="659" y="283" width="424" height="477" key="FileChooserDialogImpl/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622947127949" />
+    <state width="1562" height="234" key="GridCell.Tab.0.bottom" timestamp="1622954330597">
       <screen x="72" y="143" width="1608" height="907" />
     </state>
-    <state width="1562" height="278" key="GridCell.Tab.0.bottom/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622777359946" />
+    <state width="1562" height="234" key="GridCell.Tab.0.bottom/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622954330597" />
     <state width="1634" height="234" key="GridCell.Tab.0.bottom/1680.141.1366.768/0.0.1680.1050@0.0.1680.1050" timestamp="1622431222341" />
-    <state width="1562" height="278" key="GridCell.Tab.0.center" timestamp="1622777359945">
+    <state width="1562" height="234" key="GridCell.Tab.0.center" timestamp="1622954330597">
       <screen x="72" y="143" width="1608" height="907" />
     </state>
-    <state width="1562" height="278" key="GridCell.Tab.0.center/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622777359945" />
+    <state width="1562" height="234" key="GridCell.Tab.0.center/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622954330597" />
     <state width="1634" height="234" key="GridCell.Tab.0.center/1680.141.1366.768/0.0.1680.1050@0.0.1680.1050" timestamp="1622431222341" />
-    <state width="1562" height="278" key="GridCell.Tab.0.left" timestamp="1622777359945">
+    <state width="1562" height="234" key="GridCell.Tab.0.left" timestamp="1622954330597">
       <screen x="72" y="143" width="1608" height="907" />
     </state>
-    <state width="1562" height="278" key="GridCell.Tab.0.left/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622777359945" />
+    <state width="1562" height="234" key="GridCell.Tab.0.left/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622954330597" />
     <state width="1634" height="234" key="GridCell.Tab.0.left/1680.141.1366.768/0.0.1680.1050@0.0.1680.1050" timestamp="1622431222341" />
-    <state width="1562" height="278" key="GridCell.Tab.0.right" timestamp="1622777359946">
+    <state width="1562" height="234" key="GridCell.Tab.0.right" timestamp="1622954330597">
       <screen x="72" y="143" width="1608" height="907" />
     </state>
-    <state width="1562" height="278" key="GridCell.Tab.0.right/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622777359946" />
+    <state width="1562" height="234" key="GridCell.Tab.0.right/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622954330597" />
     <state width="1634" height="234" key="GridCell.Tab.0.right/1680.141.1366.768/0.0.1680.1050@0.0.1680.1050" timestamp="1622431222341" />
-    <state width="1562" height="278" key="GridCell.Tab.1.bottom" timestamp="1622777359947">
+    <state width="1562" height="278" key="GridCell.Tab.1.bottom" timestamp="1622954310707">
       <screen x="72" y="143" width="1608" height="907" />
     </state>
-    <state width="1562" height="278" key="GridCell.Tab.1.bottom/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622777359947" />
+    <state width="1562" height="278" key="GridCell.Tab.1.bottom/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622954310707" />
     <state width="1634" height="278" key="GridCell.Tab.1.bottom/1680.141.1366.768/0.0.1680.1050@0.0.1680.1050" timestamp="1622431025691" />
-    <state width="1562" height="278" key="GridCell.Tab.1.center" timestamp="1622777359947">
+    <state width="1562" height="278" key="GridCell.Tab.1.center" timestamp="1622954310707">
       <screen x="72" y="143" width="1608" height="907" />
     </state>
-    <state width="1562" height="278" key="GridCell.Tab.1.center/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622777359947" />
+    <state width="1562" height="278" key="GridCell.Tab.1.center/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622954310707" />
     <state width="1634" height="278" key="GridCell.Tab.1.center/1680.141.1366.768/0.0.1680.1050@0.0.1680.1050" timestamp="1622431025691" />
-    <state width="1562" height="278" key="GridCell.Tab.1.left" timestamp="1622777359946">
+    <state width="1562" height="278" key="GridCell.Tab.1.left" timestamp="1622954310707">
       <screen x="72" y="143" width="1608" height="907" />
     </state>
-    <state width="1562" height="278" key="GridCell.Tab.1.left/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622777359946" />
+    <state width="1562" height="278" key="GridCell.Tab.1.left/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622954310707" />
     <state width="1634" height="278" key="GridCell.Tab.1.left/1680.141.1366.768/0.0.1680.1050@0.0.1680.1050" timestamp="1622431025691" />
-    <state width="1562" height="278" key="GridCell.Tab.1.right" timestamp="1622777359947">
+    <state width="1562" height="278" key="GridCell.Tab.1.right" timestamp="1622954310707">
       <screen x="72" y="143" width="1608" height="907" />
     </state>
-    <state width="1562" height="278" key="GridCell.Tab.1.right/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622777359947" />
+    <state width="1562" height="278" key="GridCell.Tab.1.right/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622954310707" />
     <state width="1634" height="278" key="GridCell.Tab.1.right/1680.141.1366.768/0.0.1680.1050@0.0.1680.1050" timestamp="1622431025691" />
     <state x="439" y="301" width="864" height="482" key="RefactorJ.ExtractClass" timestamp="1622565591179">
       <screen x="72" y="143" width="1608" height="907" />
@@ -250,15 +265,20 @@
       <screen x="72" y="143" width="1608" height="907" />
     </state>
     <state x="605" y="262" width="540" height="524" key="StructurePopup/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622565572239" />
-    <state x="637" y="305" width="396" height="433" key="chooseDestDirectoryDialog" timestamp="1621394866215">
-      <screen x="0" y="143" width="1680" height="907" />
+    <state x="682" y="305" width="396" height="433" key="chooseDestDirectoryDialog" timestamp="1622953808992">
+      <screen x="72" y="143" width="1608" height="907" />
     </state>
     <state x="637" y="305" width="396" height="433" key="chooseDestDirectoryDialog/0.143.1680.907/1680.116.1366.768@0.143.1680.907" timestamp="1621394866215" />
+    <state x="682" y="305" width="396" height="433" key="chooseDestDirectoryDialog/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622953808992" />
     <state x="470" y="485" width="891" height="517" key="psd.add.library.dependency.panel.dimension" timestamp="1622775813701">
       <screen x="72" y="143" width="1608" height="907" />
     </state>
     <state x="470" y="485" width="891" height="517" key="psd.add.library.dependency.panel.dimension/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622775813701" />
     <state x="416" y="396" key="psd.add.library.dependency.panel.dimension/1680.141.1366.768/0.0.1680.1050@0.0.1680.1050" timestamp="1622326666715" />
+    <state x="573" y="282" width="596" height="478" key="refactoring.ChangeSignatureDialog" timestamp="1622948226292">
+      <screen x="72" y="143" width="1608" height="907" />
+    </state>
+    <state x="573" y="282" width="596" height="478" key="refactoring.ChangeSignatureDialog/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622948226292" />
     <state x="540" y="241" key="run.anything.popup" timestamp="1622822954738">
       <screen x="72" y="143" width="1608" height="907" />
     </state>
@@ -278,9 +298,9 @@
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem/notificacao/adapters/ContatoAdapter.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="21" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem/previsaotempo/PrecisaoTempoFragment.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
