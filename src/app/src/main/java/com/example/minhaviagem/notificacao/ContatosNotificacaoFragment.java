@@ -11,11 +11,16 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatCheckBox;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.loader.app.LoaderManager;
 import androidx.loader.content.CursorLoader;
 import androidx.loader.content.Loader;
+import androidx.recyclerview.selection.SelectionPredicates;
+import androidx.recyclerview.selection.SelectionTracker;
+import androidx.recyclerview.selection.StableIdKeyProvider;
+import androidx.recyclerview.selection.StorageStrategy;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -24,6 +29,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 
 import com.example.minhaviagem.R;
 import com.example.minhaviagem.minhalocalizacao.services.CoordenadaAtual;
@@ -36,11 +42,13 @@ import com.google.android.gms.location.LocationServices;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.microsoft.appcenter.utils.HandlerUtils.runOnUiThread;
+
 public class ContatosNotificacaoFragment extends Fragment implements LoaderManager.LoaderCallbacks<Cursor> {
 
     private static final int READ_CONTACTS = 1;
-    private List<Contato> contatos;
     private RecyclerView rv_contatos;
+    private ProgressBar pb_carregamento;
 
     public ContatosNotificacaoFragment() {
         // Required empty public constructor
@@ -60,7 +68,6 @@ public class ContatosNotificacaoFragment extends Fragment implements LoaderManag
         }
 
         if (checkPermissions()) {
-            contatos = new ArrayList<>();
             LoaderManager.getInstance(this).initLoader(0, null, this);
         } else if (!checkPermissions()) {
             //Não implementado, apenas necessário se targetSdkVersion >= 23
@@ -89,6 +96,9 @@ public class ContatosNotificacaoFragment extends Fragment implements LoaderManag
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_contatos_notificacao, container, false);
         rv_contatos = view.findViewById(R.id.rv_contatos);
+        pb_carregamento = view.findViewById(R.id.pb_carregamento);
+
+        pb_carregamento.setVisibility(View.INVISIBLE);
         return view;
     }
 
@@ -109,6 +119,34 @@ public class ContatosNotificacaoFragment extends Fragment implements LoaderManag
 
     @Override
     public void onLoadFinished(@NonNull Loader<Cursor> loader, Cursor data) {
+        pb_carregamento.setVisibility(View.VISIBLE);
+
+        Thread thread = new Thread(){
+            @Override
+            public void run() {
+                List<Contato> contatos = listarContatos(data);
+
+                synchronized (this){
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            ContatoAdapter adapter = new ContatoAdapter(contatos, getContext());
+                            rv_contatos.setLayoutManager(new LinearLayoutManager(getContext()));
+                            rv_contatos.setAdapter(adapter);
+
+
+                            pb_carregamento.setVisibility(View.INVISIBLE);
+                        }
+                    });
+                }
+            }
+        };
+
+        thread.start();
+    }
+
+    private List<Contato> listarContatos(Cursor data) {
+        List<Contato> contatos = new ArrayList<>();
         ContentResolver contentResolver = getActivity().getContentResolver();
         String _ID = ContactsContract.CommonDataKinds.Phone._ID;
         String Phone_ContactID = ContactsContract.CommonDataKinds.Phone.CONTACT_ID;
@@ -130,10 +168,7 @@ public class ContatosNotificacaoFragment extends Fragment implements LoaderManag
                 }
             }
         }
-
-        ContatoAdapter adapter = new ContatoAdapter(contatos);
-        rv_contatos.setLayoutManager(new LinearLayoutManager(getActivity()));
-        rv_contatos.setAdapter(adapter);
+        return contatos;
 
     }
 
