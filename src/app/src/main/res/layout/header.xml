@@ -12,22 +12,22 @@
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
         android:src="@mipmap/ic_launcher"
-        app:layout_constraintBottom_toTopOf="@+id/tv_email"
+        app:layout_constraintBottom_toTopOf="@+id/tv_nome"
         app:layout_constraintStart_toStartOf="parent"/>
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tv_email"
+        android:id="@+id/tv_nome"
         style="@style/TextAppearance.AppCompat.Body2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="8dp"
         android:text="Jeison Oneres da Silva"
-        app:layout_constraintBottom_toTopOf="@+id/tv_nome"
+        app:layout_constraintBottom_toTopOf="@+id/tv_email"
         app:layout_constraintStart_toStartOf="parent"/>
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tv_nome"
+        android:id="@+id/tv_email"
         style="@style/TextAppearance.AppCompat.Caption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

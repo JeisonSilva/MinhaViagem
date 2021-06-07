@@ -3,22 +3,19 @@ package com.example.minhaviagem;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatTextView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import android.Manifest;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.minhaviagem.login.models.Login;
 import com.example.minhaviagem.minhalocalizacao.MinhaLocalizacaoFragment;
-import com.example.minhaviagem.minhalocalizacao.services.CoordenadaAtual;
-import com.example.minhaviagem.minhalocalizacao.services.CoordenadaDestino;
-import com.example.minhaviagem.minhalocalizacao.services.GeofenceHelper;
 import com.example.minhaviagem.notificacao.ContatosNotificacaoFragment;
 import com.example.minhaviagem.previsaotempo.PrecisaoTempoFragment;
-import com.google.android.gms.location.LocationServices;
 import com.google.android.libraries.places.api.Places;
 import com.google.android.material.navigation.NavigationView;
 import com.microsoft.appcenter.AppCenter;
@@ -29,11 +26,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     DrawerLayout drawerLayout;
     Toolbar toolbar;
     NavigationView navigationView;
+    private Login login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         drawerLayout = findViewById(R.id.drawer);
         toolbar = findViewById(R.id.toolbar);
@@ -45,6 +44,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
 
 
+        exibirPerfil(navigationView);
+
         AppCenter.start(getApplication(), BuildConfig.APPCANTER_API_KEY,
                 Analytics.class, Crashes.class);
 
@@ -53,6 +54,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
 
+
+    }
+
+    private void exibirPerfil(NavigationView navigationView) {
+        String email = getIntent().getStringExtra("email");
+        String nome = getIntent().getStringExtra("nome");
+        login = new Login(email, nome);
+
+        AppCompatTextView tv_email = navigationView.getHeaderView(0).findViewById(R.id.tv_email);
+        AppCompatTextView tv_nome = navigationView.getHeaderView(0).findViewById(R.id.tv_nome);
+
+        tv_email.setText(login.getEmail());
+        tv_nome.setText(login.getNome());
 
     }
 
