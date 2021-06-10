@@ -6,4 +6,9 @@
     <string name="closeDrawer">Close</string>
     <string name="mensagem_contato_notificado">Este contato será notificado de suas atividades de localização</string>
     <string name="mensagem_contato_terirada_notificacao">Este contato nao recebera alertas</string>
+
+    <string name="facebook_app_id">434484261134608</string>
+    <string name="fb_login_protocol_scheme">fb434484261134608</string>
+
+
 </resources>
