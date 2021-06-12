@@ -53,6 +53,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Places.initialize(getBaseContext(), BuildConfig.MAP_API_KEY);
 
 
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.container, MinhaLocalizacaoFragment.newInstance(login))
+                .commit();
 
 
     }
