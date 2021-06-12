@@ -23,6 +23,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.example.minhaviagem.R;
+import com.example.minhaviagem.login.models.Login;
 import com.example.minhaviagem.minhalocalizacao.services.CoordenadaAtual;
 import com.example.minhaviagem.minhalocalizacao.services.CoordenadaCallback;
 import com.example.minhaviagem.minhalocalizacao.services.CoordenadaDestino;
@@ -77,6 +78,8 @@ public class MinhaLocalizacaoFragment extends Fragment implements OnMapReadyCall
     private GeofencingClient geofencingClient;
     private GeofenceHelper geofenceHelper;
     private GoogleMap googleMap;
+    private String nomeUsuario;
+    private String nomeLocalDestino;
 
     public MinhaLocalizacaoFragment() {
     }
@@ -88,10 +91,19 @@ public class MinhaLocalizacaoFragment extends Fragment implements OnMapReadyCall
         return fragment;
     }
 
+    public static MinhaLocalizacaoFragment newInstance(Login login) {
+        MinhaLocalizacaoFragment fragment = new MinhaLocalizacaoFragment();
+        Bundle args = new Bundle();
+        args.putString("nome", login.getNome());
+        fragment.setArguments(args);
+        return fragment;
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
+            nomeUsuario = getArguments().getString("nome");
         }
         if (checkPermissions()) {
             geofencingClient = LocationServices.getGeofencingClient(getActivity());
@@ -173,12 +185,12 @@ public class MinhaLocalizacaoFragment extends Fragment implements OnMapReadyCall
 
         googleMap.addMarker(new MarkerOptions()
                 .position(posicaoAtual)
-                .title("Posição atual"));
+                .title(nomeUsuario));
 
         if (posicaoDestino != null) {
             googleMap.addMarker(new MarkerOptions()
                     .position(posicaoDestino)
-                    .title("Posição destino"));
+                    .title(nomeLocalDestino));
 
             googleMap.addPolyline(new PolylineOptions().add(posicaoAtual).add(posicaoDestino).color(Color.RED));
         }
@@ -211,6 +223,7 @@ public class MinhaLocalizacaoFragment extends Fragment implements OnMapReadyCall
     @Override
     public void PosicionarDestino(Place place) {
         this.posicaoDestino = place.getLatLng();
+        this.nomeLocalDestino = place.getName();
         mapFragment.getMapAsync(this);
     }
 
