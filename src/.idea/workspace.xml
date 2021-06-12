@@ -15,7 +15,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fdfc48c8-01e2-4229-bf2b-80b2dc82c7d0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem/minhalocalizacao/services/GeofenceBroadcastReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem/minhalocalizacao/services/GeofenceBroadcastReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,9 +203,10 @@
     </state>
     <state x="459" y="283" width="824" height="477" key="AndroidCreateResourceFileDialog/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1623344911834" />
     <state x="404" y="162" key="AndroidCreateResourceFileDialog/1680.141.1366.768/0.0.1680.1050@0.0.1680.1050" timestamp="1622321635503" />
-    <state x="718" y="419" width="321" height="355" key="AndroidCreateXmlResourceDialog" timestamp="1622939707402">
-      <screen x="72" y="143" width="1608" height="907" />
+    <state x="2041" y="320" width="325" height="409" key="AndroidCreateXmlResourceDialog" timestamp="1623536242454">
+      <screen x="1366" y="0" width="1680" height="1050" />
     </state>
+    <state x="2041" y="320" width="325" height="409" key="AndroidCreateXmlResourceDialog/0.138.1366.741/1366.0.1680.1050@1366.0.1680.1050" timestamp="1623536242454" />
     <state x="718" y="419" width="321" height="355" key="AndroidCreateXmlResourceDialog/1680.116.1366.768/72.143.1608.907@72.143.1608.907" timestamp="1622939707402" />
     <state x="675" y="320" width="329" height="418" key="AndroidCreateXmlResourceDialog/1680.141.1366.768/0.0.1680.1050@0.0.1680.1050" timestamp="1622084451324" />
     <state width="468" height="506" key="DebuggerActiveHint" timestamp="1623293787037">
