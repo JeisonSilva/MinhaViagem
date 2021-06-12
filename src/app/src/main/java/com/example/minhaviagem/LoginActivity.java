@@ -45,44 +45,18 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_login);
 
         btn_login_google = findViewById(R.id.btn_login_google);
+        btn_login_facebook = findViewById(R.id.btn_login_facebook);
 
-        GoogleSignInOptions gso = new GoogleSignInOptions
+
+
+        callbackManager = CallbackManager.Factory.create();
+        googleSignClient =  GoogleSignIn.getClient(this, new GoogleSignInOptions
                 .Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .requestProfile()
-                .build();
+                .build());
 
-        callbackManager = CallbackManager.Factory.create();
-        btn_login_facebook = findViewById(R.id.btn_login_facebook);
-        LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("email", "public_profile"));
-        profileTracker = new ProfileTracker() {
-            @Override
-            protected void onCurrentProfileChanged(Profile oldProfile, Profile currentProfile) {
-                if(currentProfile != null){
-                    AcessarPainelViagem(currentProfile);
-                }
-            }
-        };
-
-        btn_login_facebook.registerCallback(callbackManager,this);
-        LoginManager.getInstance().registerCallback(callbackManager,
-                new FacebookCallback<LoginResult>() {
-                    @Override
-                    public void onSuccess(LoginResult loginResult) {
-                        // App code
-                    }
-
-                    @Override
-                    public void onCancel() {
-                        // App code
-                    }
-
-                    @Override
-                    public void onError(FacebookException exception) {
-                    }
-                });
-
-        googleSignClient =  GoogleSignIn.getClient(this, gso);
+        btn_login_facebook.setOnClickListener(this);
         btn_login_google.setOnClickListener(this);
 
 
@@ -94,7 +68,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         super.onStart();
 
         googleSignClient.signOut();
-        if(!profileTracker.isTracking())
+        if(profileTracker != null && !profileTracker.isTracking())
             profileTracker.startTracking();
 
     }
@@ -137,13 +111,40 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
     }
 
-    private void SignInFacebook() {
-
-    }
-
     private void SignInGoogle() {
         Intent intent = googleSignClient.getSignInIntent();
         startActivityForResult(intent, RC_SIGN_IN);
+    }
+
+    private void SignInFacebook() {
+        LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("email", "public_profile"));
+        profileTracker = new ProfileTracker() {
+            @Override
+            protected void onCurrentProfileChanged(Profile oldProfile, Profile currentProfile) {
+                if(currentProfile != null){
+                    AcessarPainelViagem(currentProfile);
+                }
+            }
+        };
+
+        btn_login_facebook.registerCallback(callbackManager,this);
+        LoginManager.getInstance().registerCallback(callbackManager,
+                new FacebookCallback<LoginResult>() {
+                    @Override
+                    public void onSuccess(LoginResult loginResult) {
+                        // App code
+                    }
+
+                    @Override
+                    public void onCancel() {
+                        // App code
+                    }
+
+                    @Override
+                    public void onError(FacebookException exception) {
+                    }
+                });
+
     }
 
     @Override
