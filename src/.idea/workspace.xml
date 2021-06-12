@@ -13,7 +13,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdfc48c8-01e2-4229-bf2b-80b2dc82c7d0" name="Default Changelist" comment="" />
+    <list default="true" id="fdfc48c8-01e2-4229-bf2b-80b2dc82c7d0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/contato_card.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/contato_card.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -295,16 +297,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem/minhalocalizacao/PesquisaLocalidadeFragment.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem/minhalocalizacao/PesquisaLocalidadeFragment.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/minhaviagem/LoginActivity.java</url>
           <line>174</line>
