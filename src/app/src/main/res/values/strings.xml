@@ -2,4 +2,15 @@
     <string name="app_name">Minha viagem</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="openDrawer">Open</string>
+    <string name="closeDrawer">Close</string>
+    <string name="mensagem_contato_notificado">Este contato será notificado de suas atividades de localização</string>
+    <string name="mensagem_contato_terirada_notificacao">Este contato nao recebera alertas</string>
+
+    <string name="facebook_app_id">434484261134608</string>
+    <string name="fb_login_protocol_scheme">fb434484261134608</string>
+    <string name="geofence_mensagem_chegada">Você chegou ao seu destino</string>
+    <string name="geofence_mensagem_saida">Você sai do local de encontro</string>
+
+
 </resources>
