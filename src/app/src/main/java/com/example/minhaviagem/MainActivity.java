@@ -53,6 +53,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Places.initialize(getBaseContext(), BuildConfig.MAP_API_KEY);
 
 
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.container, MinhaLocalizacaoFragment.newInstance(login))
+                .commit();
 
 
     }
@@ -74,7 +78,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onStart() {
         super.onStart();
 
-
     }
 
     @Override
@@ -83,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_percurso:
                 getSupportFragmentManager()
                         .beginTransaction()
-                        .replace(R.id.container, MinhaLocalizacaoFragment.newInstance())
+                        .replace(R.id.container, MinhaLocalizacaoFragment.newInstance(login))
                         .commit();
                 break;
             case R.id.nav_notificacao:

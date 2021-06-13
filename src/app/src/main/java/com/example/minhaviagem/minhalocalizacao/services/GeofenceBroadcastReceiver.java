@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.example.minhaviagem.R;
 import com.example.minhaviagem.minhalocalizacao.MinhaLocalizacaoFragment;
 import com.google.android.gms.location.Geofence;
 import com.google.android.gms.location.GeofencingEvent;
@@ -41,16 +42,12 @@ public class GeofenceBroadcastReceiver extends BroadcastReceiver {
 
         switch (transitionType) {
             case Geofence.GEOFENCE_TRANSITION_ENTER:
-                Toast.makeText(context, "GEOFENCE_TRANSITION_ENTER", Toast.LENGTH_SHORT).show();
-                notificationHelper.sendHighPriorityNotification("GEOFENCE_TRANSITION_ENTER", "", MinhaLocalizacaoFragment.class);
-                break;
-            case Geofence.GEOFENCE_TRANSITION_DWELL:
-                Toast.makeText(context, "GEOFENCE_TRANSITION_DWELL", Toast.LENGTH_SHORT).show();
-                notificationHelper.sendHighPriorityNotification("GEOFENCE_TRANSITION_DWELL", "", MinhaLocalizacaoFragment.class);
+                Toast.makeText(context, context.getString(R.string.geofence_mensagem_chegada), Toast.LENGTH_SHORT).show();
+                notificationHelper.sendHighPriorityNotification(context.getString(R.string.geofence_mensagem_chegada), "", MinhaLocalizacaoFragment.class);
                 break;
             case Geofence.GEOFENCE_TRANSITION_EXIT:
-                Toast.makeText(context, "GEOFENCE_TRANSITION_EXIT", Toast.LENGTH_SHORT).show();
-                notificationHelper.sendHighPriorityNotification("GEOFENCE_TRANSITION_EXIT", "", MinhaLocalizacaoFragment.class);
+                Toast.makeText(context, context.getString(R.string.geofence_mensagem_saida), Toast.LENGTH_SHORT).show();
+                notificationHelper.sendHighPriorityNotification(context.getString(R.string.geofence_mensagem_saida), "", MinhaLocalizacaoFragment.class);
                 break;
         }
 

@@ -9,6 +9,8 @@
 
     <string name="facebook_app_id">434484261134608</string>
     <string name="fb_login_protocol_scheme">fb434484261134608</string>
+    <string name="geofence_mensagem_chegada">Você chegou ao seu destino</string>
+    <string name="geofence_mensagem_saida">Você sai do local de encontro</string>
 
 
 </resources>
